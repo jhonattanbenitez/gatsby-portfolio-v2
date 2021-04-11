@@ -17,8 +17,12 @@
   "license": "0BSD",
   "dependencies": {
     "gatsby": "^3.2.1",
+    "gatsby-plugin-image": "^1.2.1",
+    "gatsby-plugin-sharp": "^3.2.1",
     "gatsby-source-strapi": "^0.0.12",
+    "gatsby-transformer-sharp": "^3.2.0",
     "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "react-dom": "^17.0.1",
+    "react-icons": "^4.2.0"
   }
 }
