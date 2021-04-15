@@ -3,7 +3,6 @@ import { StaticImage } from "gatsby-plugin-image";
 import { Link } from "gatsby";
 
 import SocialLinks from "../constants/socialLinks";
-// ...GatsbyImageSharpFluid
 
 const Hero = () => {
   return (
@@ -20,7 +19,11 @@ const Hero = () => {
             <SocialLinks />
           </div>
         </article>
-        <StaticImage src="../assets/Jhonattan.png" className="hero-img" />
+        <StaticImage
+          src="../assets/Jhonattan.png"
+          className="hero-img"
+          alt="profile-pic"
+        />
       </div>
     </header>
   );
