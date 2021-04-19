@@ -22,7 +22,7 @@ module.exports = {
       options: {
         apiURL: `http://165.232.151.50`,
         queryLimit: 1000, // Default to 100
-        contentTypes: [`jobs`, `projects`],
+        contentTypes: [`jobs`, `projects`, `blogs`],
       },
     },
   ],
