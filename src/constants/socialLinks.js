@@ -1,11 +1,11 @@
-import React from "react"
+import React from "react";
 import {
   FaFacebookSquare,
   FaLinkedin,
   FaTwitterSquare,
   FaGithubSquare,
-  FaInstagramSquare
-} from "react-icons/fa"
+  FaInstagramSquare,
+} from "react-icons/fa";
 
 const data = [
   {
@@ -33,20 +33,21 @@ const data = [
     icon: <FaInstagramSquare className="social-icon"></FaInstagramSquare>,
     url: "https://www.instagram.com/jhonb07/",
   },
-
-]
-const links = data.map(link => {
+];
+const links = data.map((link) => {
   return (
     <li key={link.id}>
       <a href={link.url} className="social-link">
         {link.icon}
       </a>
     </li>
-  )
-})
+  );
+});
 
-export default ({ styleClass }) => {
+const style = ({ styleClass }) => {
   return (
     <ul className={`social-links ${styleClass ? styleClass : ""}`}>{links}</ul>
-  )
-}
+  );
+};
+
+export default style;

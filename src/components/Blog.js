@@ -8,7 +8,7 @@ const Blog = ({ title, id, image, date, category, slug, desc }) => {
   return (
     <Link to={`/blogs/${slug}`} key={id} className="blog">
       <article>
-        <GatsbyImage image={img} alt="alt" className="blog-img" />
+        {image && <GatsbyImage image={img} alt="alt" className="blog-img" />}
         <div className="blog-card">
           <h4>{title}</h4>
           <p>{desc}</p>
@@ -22,6 +22,14 @@ const Blog = ({ title, id, image, date, category, slug, desc }) => {
   );
 };
 
-Blog.propTypes = {};
+Blog.propTypes = {
+  id: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  date: PropTypes.string.isRequired,
+  category: PropTypes.string.isRequired,
+  desc: PropTypes.string.isRequired,
+  image: PropTypes.object.isRequired,
+  slug: PropTypes.string.isRequired,
+};
 
 export default Blog;

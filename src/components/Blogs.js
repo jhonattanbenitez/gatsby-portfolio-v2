@@ -10,7 +10,6 @@ const Blogs = ({ blogs, showLink, title }) => {
 
       <div className="section-center blogs-center">
         {blogs.map((blog) => {
-          console.log(blog);
           return <Blog key={blog.id} {...blog} />;
         })}
       </div>

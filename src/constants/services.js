@@ -1,6 +1,6 @@
-import React from "react"
-import { FaCode, FaWordpress, FaReact } from "react-icons/fa"
-export default [
+import React from "react";
+import { FaCode, FaWordpress, FaReact } from "react-icons/fa";
+const services = [
   {
     id: 1,
     icon: <FaCode className="service-icon" />,
@@ -19,4 +19,5 @@ export default [
     title: "React",
     text: `Allows to create websites that are fast and responsive, great to create dynamic user-interface layouts.`,
   },
-]
+];
+export default services;

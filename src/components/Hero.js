@@ -20,7 +20,7 @@ const Hero = () => {
           </div>
         </article>
         <StaticImage
-          src="../assets/Jhonattan.png"
+          src="http://165.232.151.50/uploads/Jhonattan_c0aa6fd59f.png"
           className="hero-img"
           alt="profile-pic"
         />
