@@ -1,17 +1,11 @@
 import React from "react";
-/* 
-import Layout from "../components/Layout";
-import Hero from "../components/Hero";
-
-
- */
-
 import Layout from "../components/Layout";
 import Hero from "../components/Hero";
 import Jobs from "../components/Jobs";
 import Services from "../components/Services";
 import Projects from "../components/Projects";
 import Blogs from "../components/Blogs";
+import Seo from "../components/Seo";
 import { graphql } from "gatsby";
 
 const Index = ({ data }) => {
@@ -21,6 +15,7 @@ const Index = ({ data }) => {
   } = data;
   return (
     <Layout>
+      <Seo title="Home" description="this is the homepage" />
       <Hero />
       <Services />
       <Jobs />

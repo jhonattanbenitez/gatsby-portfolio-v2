@@ -1,6 +1,14 @@
 var plugins = [{
+      name: 'gatsby-plugin-sitemap',
+      plugin: require('D:/Proyectos/gatsby-portfolio-v2/node_modules/gatsby-plugin-sitemap/gatsby-ssr'),
+      options: {"plugins":[],"output":"/sitemap.xml","createLinkInHead":true},
+    },{
       name: 'gatsby-plugin-image',
       plugin: require('D:/Proyectos/gatsby-portfolio-v2/node_modules/gatsby-plugin-image/gatsby-ssr'),
+      options: {"plugins":[]},
+    },{
+      name: 'gatsby-plugin-react-helmet',
+      plugin: require('D:/Proyectos/gatsby-portfolio-v2/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
       options: {"plugins":[]},
     }]
 // During bootstrap, we write requires at top of this file which looks like:

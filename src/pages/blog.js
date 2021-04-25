@@ -2,6 +2,7 @@ import React from "react";
 import Layout from "../components/Layout";
 import Blogs from "../components/Blogs";
 import { graphql } from "gatsby";
+import Seo from "../components/Seo";
 
 const Blog = ({
   data: {
@@ -10,6 +11,10 @@ const Blog = ({
 }) => {
   return (
     <Layout>
+      <Seo
+        title="Blog Page"
+        description="Here you'll find all the blog posts"
+      />
       <section className="blog-page">
         <Blogs blogs={blogs} title="blog" />
       </section>
@@ -22,6 +27,7 @@ export const query = graphql`
       nodes {
         title
         slug
+        desc
         date(formatString: "MMMM Do, YYYY")
         id
         category

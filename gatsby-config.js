@@ -1,8 +1,18 @@
 module.exports = {
+  siteMetadata: {
+    title: `Jhonattan Benitez Portfolio`,
+    description: `Front-End developer portfolio, experience, projects, services and blog`,
+    titleTemplate: `%s | WebDev Portfolio`,
+    url: `https://jhonattan.dev`,
+    twitterUsername: `@jhonb07`,
+    image: `/cover.PNG`,
+  },
   plugins: [
+    `gatsby-plugin-sitemap`,
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
+    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
