@@ -6,6 +6,7 @@ module.exports = {
     url: `https://jhonattan.dev`,
     twitterUsername: `@jhonb07`,
     image: `/cover.PNG`,
+    siteUrl: `https://jhonattan.dev`,
   },
   plugins: [
     `gatsby-plugin-sitemap`,
